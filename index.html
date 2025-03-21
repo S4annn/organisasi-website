@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content />
+    <meta name="description" content />
+    <meta name="author" content />
+
+    <title>Himpunan Mahasiswa Informatika | UMBY</title>
+
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap"
+      rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        /* Slider Berita */
+        .blog_container {
+          padding: 50px 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+    
+        .blog_container h3 {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 30px;
+          color: #333;
+        }
+    
+        .owl-carousel .blog-item {
+          background: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          margin: 10px;
+        }
+    
+        .owl-carousel .blog-item:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    
+        .owl-carousel .blog-item img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+    
+        .owl-carousel .blog-item h4 {
+          font-size: 1.2rem;
+          margin: 15px 0;
+          color: #2c3e50;
+        }
+    
+        .owl-carousel .blog-item p {
+          font-size: 0.9rem;
+          color: #555;
+          line-height: 1.6;
+        }
+    
+        .owl-carousel .blog-item a {
+          display: inline-block;
+          margin-top: 15px;
+          padding: 10px 20px;
+          background-color: #3498db;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+          text-align: center;
+          transition: background-color 0.3s ease;
+        }
+    
+        .owl-carousel .blog-item a:hover {
+          background-color: #2980b9;
+        }
+    
+        .owl-nav {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          transform: translateY(-50%);
+        }
+    
+        .owl-prev,
+        .owl-next {
+          background-color: rgba(0, 0, 0, 0.5) !important;
+          color: #fff !important;
+          padding: 10px !important;
+          border-radius: 50% !important;
+          font-size: 24px !important;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        .owl-prev:hover,
+        .owl-next:hover {
+          background-color: rgba(0, 0, 0, 0.8) !important;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                <img src="images/logo.png" alt>
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div
+                class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Beranda <span
+                        class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      id="navbarDropdown" role="button" data-toggle="dropdown">
+                      Tentang HIMAKA
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#about">Profil HIMAKA</a>
+                      <a class="dropdown-item" href="#vision">Visi & Misi</a>
+                      <a class="dropdown-item" href="#anggota">Struktur
+                        Organisasi</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#events"> Events </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog"> Blog </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontak Kami</a>
+                  </li>
+                </ul>
+                <div class="user_option">
+                  <!---- <a href>
+                    <img src="images/user.png" alt>
+                  </a> !-->
+                  <form
+                    class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                    <button class="btn  my-2 my-sm-0 nav_search-btn"
+                      type="submit"></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class=" slider_section position-relative">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide"
+            data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                class="active"></li>
+              <li data-target="#carouselExampleIndicators"
+                data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators"
+                data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col">
+                    <div class="detail-box">
+                      <div>
+                        <h2>
+                          Selamat Datang Di
+
+                        </h2>
+                        <h1>
+                          website HIMAKA
+                        </h1>
+                        <p>
+                          Himpunan Mahasiswa Informatika <br> Universitas Mercu
+                          Buana Yogyakarta
+                        </p>
+                        <div class>
+                          <a href>
+                            Scroll Untuk Informasi Lengkap <i
+                              class="fa-solid fa-arrow-down"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col">
+                    <div class="detail-box">
+                      <div>
+                        <h2>
+                          Selamat Datang Di
+
+                        </h2>
+                        <h1>
+                          website HIMAKA
+                        </h1>
+                        <p>
+                          Himpunan Mahasiswa Informatika <br> Universitas Mercu
+                          Buana Yogyakarta.
+                        </p>
+                        <div class>
+                          <a href>
+                            Scroll Untuk Informasi Lengkap<i
+                              class="fa-solid fa-arrow-down"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col">
+                    <div class="detail-box">
+                      <div>
+                        <h2>
+                          Selamat Datang Di
+
+                        </h2>
+                        <h1>
+                          website HIMAKA
+                        </h1>
+                        <p>
+                          Himpunan Mahasiswa Informatika <br> Universitas Mercu
+                          Buana Yogyakarta.
+                        </p>
+                        <div class>
+                          <a href>
+                            Scroll Untuk Informasi Lengkap <i
+                              class="fa-solid fa-arrow-down"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end slider section -->
+    </div>
+
+    <!-- do section -->
+    <section class="events_section layout_padding">
+      <div id="events">
+        <div class="container">
+          <div class="heading_container">
+            <h2>EVENT KAMI</h2>
+            <a href="upcoming-events.html"><button class="btn_events"> Event
+                Selanjutnya <i class="fa-solid fa-arrow-right"></i></button>
+            </a>
+          </div>
+
+          <div class="events_gallery">
+            <div class="event_item">
+              <img src="images/images1.jpg" alt="Event 1">
+              <div class="event_details">
+                <h3>Seminar Machine Learning</h3>
+                <p>Himpunana Mahasiswa Informatika mengadakan seminar yang
+                  membahas tentang machine learning dengan mengundang narasumber
+                  yang luar biasa, yang dihadiri lebih dari 100 peserta.</p>
+                <p class="tgl">12-November-2024</p>
+                <div class="countdown" id="countdown3"></div>
+              </div>
+              <a href="gallery.html" class="view_more">Lihat Selengkapnya</a>
+              <!-- Tombol View More -->
+            </div>
+            <div class="event_item">
+              <img src="images/images2.jpg" alt="Event 2">
+              <div class="event_details">
+                <h3>Mobile Legend Championship</h3>
+                <p>Kompetisi Mobile Legend yang diselenggarakan oleh Himpunan
+                  Mahasiswaa Informatika UMBY
+                  yang di ikuti oleh beberapa peserta dari dalam dan luar
+                  kampus.</p>
+                <p class="tgl">20-Juni-2024</p>
+                <div class="countdown" id="countdown2"></div>
+              </div>
+              <a href="gallery.html" class="view_more">Lihat Selengkapnya</a>
+              <!-- Tombol View More -->
+            </div>
+            <div class="event_item">
+              <img src="images/images3.jpg" alt="Event 3">
+              <div class="event_details">
+                <h3>Webinar Cyber Security</h3>
+                <p>Himpunan Mahasiswa Informatika Mengadakan Webinar Cyber
+                  Security yang diikuti oleh Mahasiswa Informatika UMBY yang
+                  membahas tentang cyber security dan bagaimana cara melindungi
+                  diri dari serangan cyber yang di isi oleh narasumber yang
+                  cukup berpengalaman.</p>
+                <p class="tgl">4-Mei-2024</p>
+                <div class="countdown" id="countdown1">
+                  <span id="days1"></span> Hari
+                  <span id="hours1"></span> Jam
+                  <span id="minutes1"></span> Menit
+                  <span id="seconds1"></span> Detik
+                </div>
+              </div>
+              <a href="gallery.html" class="view_more">Lihat Selengkapnya</a>
+              <!-- Tombol View More -->
+            </div>
+            <div class="event_item">
+              <img src="images/images2.jpg" alt="Event 4">
+              <div class="event_details">
+                <h3>Bakti Sosial Dan Penggalangan Dana / Barang</h3>
+                <p>Himpunan Mahasiswa Informatika mengadakan bakti sosial dan
+                  penggalangan dana dan barang.</p>
+                <p class="tgl">5-mei-2025</p>
+                <div class="countdown" id="countdown4"></div>
+              </div>
+              <a href="gallery.html" class="view_more">Lihat Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end do section -->
+
+    <!-- who section -->
+
+    <section class="who_section ">
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="img-box">
+                <img src="images/logo.png" alt>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="detail-box">
+                <div class="heading_container">
+                  <h2>
+                    Tentang HIMAKA
+                  </h2>
+                </div>
+                <p>
+                  Himaka Merupakan Himpunan Mahasiswa Program Studi Informatika
+                  Fakultas Teknologi Informasi <br> Universitas Mercu Buana
+                  Yogyakarta.
+                </p>
+                <div>
+                  <a href>
+                    Baca Selengkapnya
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end who section -->
+
+    <!-- Members Section -->
+    <section class="members_section layout_padding">
+      <div class="container" id="anggota">
+        <div class="heading_container">
+          <h2>Anggota Himpunan</h2>
+          <a href="members.html">
+            <button class="btn_members">Member Selengkapnya <i
+                class="fa-solid fa-arrow-right"></i></button>
+          </a>
+          <div class="berikut">
+            <p>
+              Daftar anggota dan Pimpinan Himpunan Mahasiswa
+              Informatika Universitas Mercu Buana Yogyakarta :
+            </p>
+          </div>
+        </div>
+        <div class="members_grid">
+          <!-- Ketua Himpunan -->
+          <div class="member_card">
+            <div class="card_header">
+              <img src="images/ketua.jpg" alt="Ketua Himpunan"
+                class="member_img">
+            </div>
+            <div class="card_body">
+              <h4>Sandy Teuku Pranata</h4>
+              <p class="member_role">Ketua Himpunan</p>
+              <p class="member_description">
+                Sandy adalah mahasiswa semester 5 dengan passion di bidang
+                Web Development dan AI.
+              </p>
+            </div>
+            <div class="card_footer">
+              <p>HIMAKA UMBY</p>
+            </div>
+          </div>
+          <!-- Wakil Ketua -->
+          <div class="member_card">
+            <div class="card_header">
+              <img src="images/ketua.jpg" alt="Wakil Ketua" class="member_img">
+            </div>
+            <div class="card_body">
+              <h4>Fidayin Ihsan Mustofa</h4>
+              <p class="member_role">Wakil Ketua</p>
+              <p class="member_description">
+                Fidayin adalah mahasiswa semester 5 yang ahli dalam bidang
+                Mobile App Development.
+              </p>
+            </div>
+            <div class="card_footer">
+              <p>HIMAKA UMBY</p>
+            </div>
+          </div>
+          <!-- Sekretaris -->
+          <div class="member_card">
+            <div class="card_header">
+              <img src="images/ketua.jpg" alt="Sekretaris" class="member_img">
+            </div>
+            <div class="card_body">
+              <h4>Fadira Erica <br> Putri</h4>
+              <p class="member_role">Sekretaris</p>
+              <p class="member_description">
+                Michael adalah mahasiswa semester 5 yang fokus pada bidang
+                Data Science.
+              </p>
+            </div>
+            <div class="card_footer">
+              <p>HIMAKA UMBY</p>
+            </div>
+          </div>
+          <!-- Bendahara -->
+          <div class="member_card">
+            <div class="card_header">
+              <img src="images/ketua.jpg" alt="Bendahara" class="member_img">
+            </div>
+            <div class="card_body">
+              <h4>Gravidya Syahidna Maiwa</h4>
+              <p class="member_role">Bendahara</p>
+              <p class="member_description">
+                Emily adalah mahasiswa semester 5 yang memiliki minat di
+                bidang Cybersecurity.
+              </p>
+            </div>
+            <div class="card_footer">
+              <p>HIMAKA UMBY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- work section -->
+    <section class="work_section layout_padding">
+      <div id="blog">
+        <div class="container">
+          <div class="heading_container">
+            <h2>
+              HIMAKA Blog
+            </h2>
+            <div class="selamat">
+              <p>
+                Selamat datang di Blog HIMAKA! Di sini, kami
+                menyediakan
+                artikel informatif seputar dunia pemrograman, teknologi, dan
+                pengembangan perangkat lunak serta berita seputar Himaka.
+              </p>
+            </div>
+          </div>
+          <div class="blog_container layout_padding2">
+            <h3>Berita Terbaru</h3>
+            <div class="owl-carousel owl-theme"></div>
+          </div>
+          <div class="row">
+            <!-- Berita 1 -->
+            <div class="col-md-4">
+              <div class="blog-item">
+                <img src="images/seminarberita.png" alt="seminar">
+                <h4>Himaka UMBY Gelar Seminar Nasional, Mengenalkan Bahasa
+                  Pemrograman</h4>
+                <p>Himpunan Mahasiswa Informatika (Himaka) Universitas Mercu
+                  Buana Yogyakarta (UMBY) menyelenggarakan Seminar Nasional
+                  Front End Development.
+
+                  Mengusung tema Jelajahi Dunia Tanpa Batas melalui Front End
+                  Developer.
+
+                  Seminar dilaksanakan secara hybrid tanggal 4 Desember lalu.
+                  Diikuti 315 peserta.</p>
+                <a
+                  href="https://fti.mercubuana-yogya.ac.id/himaka-umby-gelar-seminar-nasional-mengenalkan-bahasa-pemrograman"
+                  class="btn btn-primary">Baca
+                  Selengkapnya →</a>
+              </div>
+            </div>
+            <!-- Berita 2 -->
+            <div class="col-md-4">
+              <div class="blog-item">
+                <img src="images/seminarberita2.png" alt="seminar">
+                <h4>HIMAKA UMBY Sukses Gelar Webinar Pelatihan Organisasi</h4>
+                <p>Himpunan Mahasiswa Informatika (HIMAKA) Universitas Mercu
+                  Buana Yogyakarta (UMBY) mengadakan webinar pelatihan
+                  organisasi bertema “Membangun Jiwa Kepemimpinan yang
+                  Berkarakter pada Generasi Muda”.
+
+                  Webinar ini diselenggarakan secara daring melalui aplikasi
+                  Zoom pada Sabtu (02/04/2022), dan diikuti oleh kurang lebih
+                  100 peserta dari Mahasiswa UMBY dan Perguruan Tinggi (PT)
+                  lainnya.</p>
+                <a
+                  href="https://mercubuana-yogya.ac.id/news/himaka-umby-sukses-gelar-webinar-pelatihan-organisasi.html"
+                  class="btn btn-primary">Baca
+                  Selengkapnya →</a>
+              </div>
+            </div>
+            <!-- Berita 3 -->
+            <div class="col-md-4">
+              <div class="blog-item">
+                <img src="images/seminarberita3.png" alt="seminar">
+                <h4>HIMAKA UMBY Gelar Webinar Nasional UI/UX Design</h4>
+                <p>Himpunan Mahasiswa Informatika (HIMAKA) Universitas Mercu
+                  Buana Yogyakarta (UMBY) menyelenggarakan Webinar Nasional
+                  UI/UX Design dengan tema “Fundamental UI/UX design
+                  Wifeframing,Visual Design dan Prototyping” pada Rabu, 27
+                  September 2023. Webinar ini diikuti oleh 165 peserta dari
+                  internal dan eksternal kampus UMBY secara online via zoom
+                  meet.</p>
+                <a
+                  href="https://mercubuana-yogya.ac.id/news/himaka-umby-gelar-webinar-nasional-uiux-design-1.html"
+                  class="btn btn-primary">Baca
+                  Selengkapnya →</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog-item">
+                <img src="images/seminarberita3.png" alt="seminar">
+                <h4>HIMAKA UMBY Gelar Webinar Nasional UI/UX Design</h4>
+                <p>Himpunan Mahasiswa Informatika (HIMAKA) Universitas Mercu
+                  Buana Yogyakarta (UMBY) menyelenggarakan Webinar Nasional
+                  UI/UX Design dengan tema “Fundamental UI/UX design
+                  Wifeframing,Visual Design dan Prototyping” pada Rabu, 27
+                  September 2023. Webinar ini diikuti oleh 165 peserta dari
+                  internal dan eksternal kampus UMBY secara online via zoom
+                  meet.</p>
+                <a
+                  href="https://mercubuana-yogya.ac.id/news/himaka-umby-gelar-webinar-nasional-uiux-design-1.html"
+                  class="btn btn-primary">Baca
+                  Selengkapnya →</a>
+              </div>
+            </div>
+            <!-- Artikel Terbaru -->
+            <div class="blog_container layout_padding2">
+              <h3>Artikel Terbaru</h3>
+              <div class="row">
+                <!-- Artikel 1 -->
+                <div class="col-md-4">
+                  <div class="blog-item">
+                    <img src="images/python.png" alt="Python Programming">
+                    <h4>Mengenal Dasar-Dasar Pemrograman Python</h4>
+                    <p>Python adalah salah satu bahasa pemrograman paling
+                      populer
+                      saat ini. Pelajari dasar-dasar Python dan bagaimana
+                      memulai
+                      proyek pertama Anda.</p>
+                    <a href="blog-python.html" class="btn btn-primary">Baca
+                      Selengkapnya →</a>
+                  </div>
+                </div>
+                <!-- Artikel 2 -->
+                <div class="col-md-4">
+                  <div class="blog-item">
+                    <img src="images/html.css.png" alt="HTML & CSS">
+                    <h4>Panduan Lengkap Membuat Website dengan HTML & CSS</h4>
+                    <p>Ingin membangun website sendiri? Artikel ini akan
+                      membahas
+                      langkah-langkah membuat website dari nol menggunakan
+                      HTML
+                      dan
+                      CSS.</p>
+                    <a href="blog-html-css.html" class="btn btn-primary">Baca
+                      Selengkapnya →</a>
+                  </div>
+                </div>
+                <!-- Artikel 3 -->
+                <div class="col-md-4">
+                  <div class="blog-item">
+                    <img src="images/javascript.png"
+                      alt="JavaScript Optimization">
+                    <h4>Tips Mengoptimalkan Kode JavaScript untuk Performa
+                      Lebih
+                      Baik</h4>
+                    <p>Dapatkan tips praktis untuk meningkatkan performa
+                      aplikasi
+                      web Anda dengan JavaScript yang lebih efisien.</p>
+                    <a href="blog-javascript.html"
+                      class="btn btn-primary">Baca
+                      Selengkapnya →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Kategori Blog -->
+            <div class="category_container">
+              <h3>Kategori Blog</h3>
+              <ul class="categories">
+                <li><a href="blog/category-pemrograman-dasar.html">Pemrograman
+                    Dasar</a></li>
+                <li><a href="blog/category-web-development.html">Web
+                    Development</a></li>
+                <li><a href="blog/category-mobile-apps.html">Mobile App
+                    Development</a></li>
+                <li><a href="blog/category-data-science.html">Data Science &
+                    AI</a></li>
+                <li><a
+                    href="blog/category-cyber-security.html">Cybersecurity</a></li>
+              </ul>
+            </div>
+            <!-- Kontribusi -->
+            <div class="contribution_container">
+              <h3>Kontribusi</h3>
+              <p>Kami juga membuka kesempatan bagi mahasiswa dan profesional
+                untuk
+                berkontribusi artikel ke Programming Blog HIMAKA. Jika Anda
+                memiliki
+                ide atau topik menarik untuk dibagikan, silakan hubungi kami
+                melalui
+                email: <a
+                  href="mailto:himakaumby@gmail.com">himakaumby@gmail.com</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end client section -->
+
+      <!-- target section -->
+      <section class="target_section layout_padding2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="detail-box">
+                <h2>
+                  30+
+                </h2>
+                <h5>
+                  Anggota Aktif
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="detail-box">
+                <h2>
+                  750+
+                </h2>
+                <h5>
+                  Mahasiswa Informatika
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="detail-box">
+                <h2>
+                  50+
+                </h2>
+                <h5>
+                  Events
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="detail-box">
+                <h2>
+                  15+
+                </h2>
+                <h5>
+                  Dosen
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end target section -->
+
+      <!-- contact section -->
+
+      <section class="contact_section layout_padding">
+        <div class="container">
+          <div id="contact">
+            <div class="heading_container">
+              <h2>
+                Kontak Kami
+              </h2>
+            </div>
+            <div class>
+              <div class>
+                <div class="row">
+                  <div class="col-md-9 mx-auto">
+                    <div class="contact-form">
+                      <form action>
+                        <div>
+                          <input type="text" placeholder="Nama Lengkap ">
+                        </div>
+                        <div>
+                          <input type="text" placeholder="Nomor Telepon">
+                        </div>
+                        <div>
+                          <input type="email" placeholder="Alamat Email">
+                        </div>
+                        <div>
+                          <input type="text" placeholder="Pesan"
+                            class="input_message">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button type="submit" class="btn_on-hover">
+                            Kirim
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2508051463915!2d110.3919434746431!3d-7.763204992255967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59bb7ddfe0e5%3A0x798da0c5d7aeac76!2sUniversitas%20Mercu%20Buana%20Yogyakarta%2C%20Kampus%202!5e0!3m2!1sid!2sid!4v1740019131586!5m2!1sid!2sid"
+              width="600" height="450" style="border:0;" allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- end contact section -->
+
+      <!-- info section -->
+      <section class="info_section ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="info_contact">
+                <h5>
+                  Lokasi Detail
+                </h5>
+                <div>
+                  <div class="img-box">
+                    <img src="images/location-white.png" width="18px" alt>
+                  </div>
+                  <p>
+                    Jl. Gejayan Jembatan Merah Kampus 2 <br> Universitas Mercu
+                    Buana Yogyakarta
+                  </p>
+                </div>
+                <div>
+                  <div class="img-box">
+                    <img src="images/telephone-white.png" width="12px" alt>
+                  </div>
+                  <p>
+                    +6282259725826
+                  </p>
+                </div>
+                <div>
+                  <div class="img-box">
+                    <img src="images/envelope-white.png" width="18px" alt>
+                  </div>
+                  <p>
+                    himakaumby@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info_info">
+                <h5>
+                  Informasi
+                </h5>
+                <a href="https://fti.umby.ac.id">Fakultas Teknologi
+                  Informasi</a>
+                <a href="https://fti.mercubuana-yogya.ac.id/dosen-fti">Dosen
+                  Fakultas Teknologi Informasi <br></a>
+                <a href="#">Informatics Student</a> <br>
+                <a href="https://sso.mercubuana-yogya.ac.id">SSO UMBY</a>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="info_insta">
+                <h5>
+                  Sosial Media
+                </h5>
+                <div class="insta_container">
+                  <div>
+                    <a href="https://www.instagram.com/himaka.umby/">
+                      <img src="images/instagram.png" alt="#">
+                      <img src="images/youtube.png" alt="#">
+                    </div>
+                  </a>
+                </div>
+                <div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end info_section -->
+
+      <!-- footer section -->
+      <section class="container-fluid footer_section">
+        <p>
+          Made by ensigned template and Sandy | 2025.
+        </p>
+      </section>
+      <!-- footer section -->
+      <script src="js/script.js"></script>
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+      <!-- owl carousel script 
+    -->
+      <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true, // Loop slider
+          margin: 20, // Jarak antar item
+          nav: true, // Tampilkan tombol navigasi
+          dots: false, // Sembunyikan dots
+          responsive: {
+            0: {
+              items: 1 // 1 item di layar kecil
+            },
+            600: {
+              items: 2 // 2 item di layar sedang
+            },
+            1000: {
+              items: 3 // 3 item di layar besar
+            }
+          }
+        });
+      });
+  </script>
+    </body>
+
+  </html>
