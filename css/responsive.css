@@ -1,100 +1,158 @@
-@media (max-width: 1120px) {
-    .hero_area {
-        height: auto;
-    }
-
-    .slider_section {
-        padding: 50px 0;
-    }
-
+/* Perbaikan untuk mencegah horizontal scrolling pada mobile */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
+/* Perbaikan untuk header */
+.header_section {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Perbaikan untuk tombol yang menggunakan transform yang bisa menyebabkan overflow */
+.btn_events,
+.btn_members {
+  transform: none;
+  float: right;
+  margin-top: -30px;
+}
+
+/* Perbaikan untuk hero section */
+.hero_area {
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Perbaikan untuk slider section */
+.slider_section .detail-box {
+  transform: none;
+  margin-top: 60px;
+  margin-bottom: 110px;
+}
+
+/* Perbaikan untuk contribution container */
+.contribution_container {
+  transform: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Perbaikan untuk map */
+.map {
+  margin-left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Media query untuk tablet */
 @media (max-width: 992px) {
-    .user_option {
-        flex-direction: column;
-    }
+  .event_item {
+    width: calc(50% - 20px); /* 2 kolom di tablet */
+  }
 
-    .custom_nav-container .nav_search-btn {
-        background-position: center;
-        margin-top: 10px;
-    }
+  .slider_section .detail-box h1 {
+    font-size: 3rem; /* Ukuran font lebih kecil */
+  }
 
-    .user_option a {
-        margin-bottom: 10px;
-    }
-
-    .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-        padding: 0 5px;
-    }
+  .members_grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
+/* Media query untuk mobile ukuran medium */
 @media (max-width: 768px) {
+  .categories {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .info_section .col-md-3 {
-        text-align: center;
-    }
+  .categories li a {
+    padding: 8px 15px;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+  }
 
-    .info_section .col-md-3:not(:nth-last-child(1)) {
-        margin-bottom: 35px;
-    }
+  .slider_section .detail-box h1 {
+    font-size: 2.5rem;
+  }
 
-    .who_section .detail-box {
-        margin-left: 15px;
-        margin-top: 35px;
-    }
+  .custom_nav-container.navbar-expand-lg .navbar-nav {
+    max-width: 100%;
+  }
 
-    .work_section .work_container .box.b-1,
-    .work_section .work_container .box.b-2,
-    .work_section .work_container .box.b-3,
-    .work_section .work_container .box.b-4 {
-        width: 100%;
-    }
+  .event_item {
+    width: 100%;
+  }
 
-    .info_section .col-md-3>div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info_section .info_form .social_box {
-        justify-content: center;
-    }
-
-    .info_section .info_form .social_box a {
-        margin: 0 10px;
-    }
-
-    .footer_section p {
-        padding: 20px 30px;
-    }
+  .member_card {
+    max-width: 100%;
+  }
 }
 
+/* Media query untuk mobile ukuran kecil */
 @media (max-width: 576px) {
-    .slider_section .detail-box h1 {
-        font-size: 3.5rem;
-    }
+  .slider_section .detail-box h1 {
+    font-size: 2rem;
+  }
 
-    .do_section .do_container .arrow_bg::before {
-        display: none;
-    }
+  .heading_container h2 {
+    font-size: 1.8rem;
+  }
+
+  .do_section .do_container .box {
+    margin: 35px 10px 0 10px;
+  }
+
+  .who_section .detail-box {
+    margin-left: 0;
+  }
+
+  .work_section .work_container .box.b-2,
+  .work_section .work_container .box.b-3,
+  .work_section .work_container .box.b-1,
+  .work_section .work_container .box.b-4 {
+    width: 100%;
+  }
+
+  /* Perbaikan untuk navbar pada mobile */
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+    transform: none;
+  }
+
+  .hero_area .header_section img {
+    transform: none;
+    height: 50px;
+    width: 50px;
+  }
 }
 
-@media (max-width: 480px) {}
+/* Media query untuk mobile ukuran sangat kecil */
+@media (max-width: 375px) {
+  .slider_section .detail-box h1 {
+    font-size: 1.5rem;
+  }
 
-@media (max-width: 420px) {
-    .slider_section .detail-box h2 {
-        font-size: 1.5rem;
-    }
+  .slider_section .detail-box h2 {
+    font-size: 1.2rem;
+  }
 
-    .slider_section .detail-box h1 {
-        font-size: 3rem;
-    }
-}
+  .slider_section .detail-box a {
+    padding: 8px 30px;
+  }
 
-@media (max-width: 360px) {}
+  .member_card {
+    padding: 5px;
+  }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
-    }
+  .member_img {
+    width: 80px;
+    height: 80px;
+  }
 }

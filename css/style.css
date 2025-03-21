@@ -1296,37 +1296,241 @@ body {
 .owl-next:hover {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
-/* Tablet: 2 kolom */
-@media (max-width: 992px) {
-  .event_item {
-    width: calc(50% - 20px); /* 2 kolom di tablet */
+
+/* Global Responsive Adjustments */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+    padding: 0 15px;
+  }
+
+  .heading_container h2 {
+    font-size: 2rem;
+  }
+
+  .map {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
+/* Large Tablets and Small Desktops */
+@media (max-width: 992px) {
+  /* Header Adjustments */
+  .custom_nav-container.navbar-expand-lg .navbar-nav {
+    max-width: 100%;
+  }
+
+  /* Hero Section Adjustments */
+  .slider_section .detail-box {
+    margin-bottom: 60px;
+    transform: translateY(30px);
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 3rem;
+  }
+
+  /* Layout Adjustments */
+  .who_section .detail-box {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  /* Work Section Adjustments */
+  .work_section .work_container .box.b-2,
+  .work_section .work_container .box.b-3,
+  .work_section .work_container .box.b-1,
+  .work_section .work_container .box.b-4 {
+    width: 100%;
+  }
+
+  /* Events Section Adjustments */
+  .event_item {
+    width: calc(50% - 20px); /* 2 columns on tablets */
+  }
+
+  /* Members Grid Adjustments */
+  .members_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Blog Grid Adjustments */
+  .blog_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Utility Classes Adjustments */
+  .btn_events,
+  .btn_members {
+    transform: translateX(0) translateY(0);
+    margin: 10px auto;
+    display: block;
+  }
+
+  .contribution_container {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets */
 @media (max-width: 768px) {
+  /* Header Adjustments */
+  .hero_area .header_section img {
+    transform: translateY(0);
+  }
+
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+    transform: translateY(0);
+    padding: 8px;
+  }
+
+  /* Hero Section Adjustments */
+  .slider_section .detail-box h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Members Grid Adjustments */
+  .members_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  /* Client Section Adjustments */
+  .client_section {
+    padding-bottom: 100px;
+  }
+
+  /* Category Adjustments */
   .categories {
-    gap: 10px; /* Kurangi jarak antar kategori */
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .categories li a {
-    padding: 8px 15px; /* Ukuran padding lebih kecil */
-    font-size: 1rem; /* Ukuran font lebih kecil */
+    padding: 8px 15px;
+    font-size: 1rem;
+  }
+
+  /* Utility Adjustments */
+  .selamat p,
+  .berikut p {
+    transform: translateY(0);
   }
 }
 
-/* Mobile: 1 kolom */
+/* Mobile Landscape */
 @media (max-width: 576px) {
+  /* Header Adjustments */
+  .header_section {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  /* Hero Section Adjustments */
+  .hero_area {
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .slider_section {
+    height: auto;
+  }
+
+  .slider_section .detail-box {
+    margin-bottom: 40px;
+    transform: translateY(0);
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 2rem;
+  }
+
+  .slider_section .detail-box h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Events Section Adjustments */
   .event_item {
-    width: 100%; /* 1 kolom di mobile */
+    width: 100%; /* 1 column on mobile */
+  }
+
+  /* Members Grid Adjustments */
+  .members_grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .member_card {
+    max-width: 100%;
+  }
+
+  /* Blog Grid Adjustments */
+  .blog_grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Category Adjustments */
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categories li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .categories li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Layout Padding Adjustments */
+  .layout_padding {
+    padding: 40px 0;
+  }
+
+  .layout_padding2 {
+    padding: 25px 0;
+  }
+
+  /* Contact Form Adjustments */
+  .contact_section .contact-form {
+    padding: 15px;
+  }
+
+  /* Map Adjustments */
+  .map {
+    height: 250px;
+    margin-top: 30px;
   }
 }
 
-.categories {
-  flex-direction: column; /* Tampilkan kategori dalam satu kolom */
-  align-items: center; /* Pusatkan kategori */
-}
+/* Mobile Small */
+@media (max-width: 375px) {
+  /* Typography Adjustments */
+  .slider_section .detail-box h1 {
+    font-size: 1.8rem;
+  }
 
-.categories li a {
-  width: 100%; /* Lebar penuh untuk mobile */
-  text-align: center; /* Teks di tengah */
+  .heading_container h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Layout Adjustments */
+  .layout_padding {
+    padding: 30px 0;
+  }
+
+  /* Contact Adjustments */
+  .contact_section .contact-form button {
+    padding: 10px 30px;
+  }
+
+  /* Header Adjustments */
+  .navbar-brand span {
+    font-size: 20px;
+  }
 }
